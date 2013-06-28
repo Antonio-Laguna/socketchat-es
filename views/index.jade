@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  #mensajes
+    #lista-mensajes
+    .controles
+      textarea#mensaje
+      input#enviar(type="button", value="Enviar")
+  #conectados
+    ul
+  script(src='/socket.io/socket.io.js')
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js")
+  script(src="javascripts/chat.js")

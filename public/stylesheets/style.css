@@ -1,0 +1,90 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+#mensajes, #conectados {
+  display: inline-block;
+  height: 600px;
+  vertical-align: top;
+  border: 1px solid #c1c1c1;
+  position: relative;
+}
+
+#conectados {
+  width: 20%;
+}
+#conectados ul {
+  list-style: none;
+}
+#conectados li {
+  padding: 5px;
+  color: #333;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+}
+#mensajes {
+  width: 80%;
+  overflow-y: auto;
+}
+#lista-mensajes {
+  height: 500px;
+}
+
+.controles {
+  background-color: #e0e0e0;
+  height: 58px;
+  padding: 5px;
+  border-top: 1px solid #efefef;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.controles #enviar {
+  background: #eeeeee;
+  background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
+  background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+  background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+  background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
+  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+  padding: 0 13px;
+  margin-left: 5px;
+  border: 1px solid #848484;
+  vertical-align: top;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 9%;
+}
+.controles #enviar:hover {
+  border: 1px solid #000;
+}
+.controles #enviar, .controles textarea {
+  height: 47px;
+}
+
+.controles textarea {
+  border: 1px solid #9d9d9d;
+  padding: 5px;
+  width: 90%;
+  background-color: #fff;
+}
+#lista-mensajes {
+  padding: 5px;
+  overflow-y: auto;
+  height: 541px;
+}
+#lista-mensajes p {
+  line-height: 20px;
+}
+#lista-mensajes .sistema {
+  font-style: italic;
+  text-align: right;
+  color: #949494;
+}
